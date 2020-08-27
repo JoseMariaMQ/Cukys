@@ -1,4 +1,3 @@
-//Ice cream flavors
 const infoIceCream1 = document.getElementById('info-icecream')
 const iceCreamFlavors = document.getElementById('ice-cream-flavors')
 

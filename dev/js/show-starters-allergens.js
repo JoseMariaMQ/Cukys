@@ -1,4 +1,3 @@
-//Starter
 const infoStarter1 = document.getElementById('info-starter-0')
 const nuggetStarterAllergens = document.getElementById('nugget-starter-allergens')
 
@@ -14,7 +13,7 @@ const sanjacoboStarterAllergens = document.getElementById('sanjacobo-starter-all
 const infoStarter5 = document.getElementById('info-starter-4')
 const chipsStarterAllergens = document.getElementById('chips-starter-allergens')
 
-//Show nugget fried allergens
+//Show nugget starter allergens
 if(infoStarter1) {
     infoStarter1.addEventListener('click', (e) => {
         if(e.target.dataset.name !== undefined) {
@@ -33,7 +32,7 @@ if(nuggetStarterAllergens) {
     })
 }
 
-//Show croquette fried allergens
+//Show croquette starter allergens
 if(infoStarter2) {
     infoStarter2.addEventListener('click', (e) => {
         if(e.target.dataset.name !== undefined) {
@@ -52,7 +51,7 @@ if(croquetteStarterAllergens) {
     })
 }
 
-//Show dumpling fried allergens
+//Show dumpling starter allergens
 if(infoStarter3) {
     infoStarter3.addEventListener('click', (e) => {
         if(e.target.dataset.name !== undefined) {
@@ -71,7 +70,7 @@ if(dumplingStarterAllergens) {
     })
 }
 
-//Show san jacobo fried allergens
+//Show san jacobo starter allergens
 if(infoStarter4) {
     infoStarter4.addEventListener('click', (e) => {
         if(e.target.dataset.name !== undefined) {
@@ -90,7 +89,7 @@ if(sanjacoboStarterAllergens) {
     })
 }
 
-//Show chips fried allergens
+//Show chips starter allergens
 if(infoStarter5) {
     infoStarter5.addEventListener('click', (e) => {
         if(e.target.dataset.name !== undefined) {

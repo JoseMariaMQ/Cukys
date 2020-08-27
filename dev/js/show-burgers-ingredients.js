@@ -1,4 +1,3 @@
-//Burgers
 const infoBurger1 = document.getElementById('info-burger-0')
 const normalBurgerIngredients = document.getElementById('normal-burger-ingredients')
 

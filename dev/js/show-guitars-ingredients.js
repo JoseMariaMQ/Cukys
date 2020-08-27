@@ -1,4 +1,3 @@
-//Guitar
 const infoGuitar1 = document.getElementById('info-guitar-0')
 const hamGuitarIngredients = document.getElementById('ham-guitar-ingredients')
 

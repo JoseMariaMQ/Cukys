@@ -1,4 +1,3 @@
-//Sandwiches
 const infoSandwich1 = document.getElementById('info-sandwich-0')
 const mixSandwichIngredients = document.getElementById('mix-sandwich-ingredients')
 

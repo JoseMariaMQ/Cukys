@@ -1,4 +1,3 @@
-//Hot dogs
 const infoHotDog1 = document.getElementById('info-hotdog-0')
 const hotDogIngredients = document.getElementById('hot-dog-ingredients')
 

@@ -1,4 +1,3 @@
-//Baguette
 const infoBaguette1 = document.getElementById('info-baguette-0')
 const vegetableBaguetteIngredients = document.getElementById('vegetable-baguette-ingredients')
 
