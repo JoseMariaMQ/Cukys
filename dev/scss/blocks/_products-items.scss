@@ -4,9 +4,9 @@
   }
 
   & li {
-    //padding: .5em 0;
     margin-bottom: .5em;
     margin-right: .5em;
+    margin-left: .5rem;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 15px;
   }
@@ -23,7 +23,7 @@
     cursor: pointer;
     background-color: $primary-color;
     color: $text-color;
-    padding: .23rem .3rem;
+    padding: .23rem .4rem;
     border-radius: 15px;
     font-size: .6rem;
     float: right;
@@ -67,6 +67,10 @@
     & .item2, .item4 {
       font-size: .7rem;
       margin-top: .02rem;
+    }
+
+    & .item3 {
+      font-size: 1rem;
     }
 
     & .products__image {

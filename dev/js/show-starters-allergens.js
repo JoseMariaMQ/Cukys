@@ -11,7 +11,7 @@ const infoStarter4 = document.getElementById('info-starter-3')
 const sanjacoboStarterAllergens = document.getElementById('sanjacobo-starter-allergens')
 
 const infoStarter5 = document.getElementById('info-starter-4')
-const chipsStarterAllergens = document.getElementById('chips-starter-allergens')
+const twisterStarterAllergens = document.getElementById('twister-starter-allergens')
 
 //Show nugget starter allergens
 if(infoStarter1) {
@@ -94,16 +94,16 @@ if(infoStarter5) {
     infoStarter5.addEventListener('click', (e) => {
         if(e.target.dataset.name !== undefined) {
             if(e.target.dataset.name === 'starter') {
-                chipsStarterAllergens.classList.add('lightbox--show')
+                twisterStarterAllergens.classList.add('lightbox--show')
             }
         }
     })
 }
 
-if(chipsStarterAllergens) {
-    chipsStarterAllergens.addEventListener('click', (e) => {
+if(twisterStarterAllergens) {
+    twisterStarterAllergens.addEventListener('click', (e) => {
         if(e.target.classList.contains('lightbox')) {
-            chipsStarterAllergens.classList.remove('lightbox--show')
+            twisterStarterAllergens.classList.remove('lightbox--show')
         }
     })
 }

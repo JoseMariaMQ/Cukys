@@ -148,19 +148,19 @@ body { display: grid; grid-template-columns: 1fr; grid-template-rows: 150px 1fr 
 
 .main { grid-column: 1 / -1; grid-row: 2 / 3; color: var(--text-color4); }
 
-.products { height: 35px; background-color: var(--text-color3); padding-left: .5rem; color: var(--text-color); display: flex; align-items: center; border-radius: 15px; }
+.products { height: 35px; background-color: var(--text-color3); padding-left: 1rem; color: var(--text-color); display: flex; align-items: center; border-radius: 15px; }
 
 .products h2 { margin: 0; }
 
 .products__items ol { margin-left: -1rem; }
 
-.products__items li { margin-bottom: .5em; margin-right: .5em; background-color: rgba(255, 255, 255, 0.4); border-radius: 15px; }
+.products__items li { margin-bottom: .5em; margin-right: .5em; margin-left: .5rem; background-color: rgba(255, 255, 255, 0.4); border-radius: 15px; }
 
 .products__items li:first-letter { text-transform: uppercase; }
 
 .products__items .item1 { margin-left: .5rem; }
 
-.products__items .item2 { cursor: pointer; background-color: var(--primary-color); color: var(--text-color); padding: .23rem .3rem; border-radius: 15px; font-size: .6rem; float: right; }
+.products__items .item2 { cursor: pointer; background-color: var(--primary-color); color: var(--text-color); padding: .23rem .4rem; border-radius: 15px; font-size: .6rem; float: right; }
 
 .products__items .item3 { font-size: .6rem; float: right; margin-top: .25rem; margin-right: .2rem; }
 
@@ -173,6 +173,7 @@ body { display: grid; grid-template-columns: 1fr; grid-template-rows: 150px 1fr 
 @media screen and (min-width: 700px) { .products__items { display: grid; grid-template-columns: 4fr 1fr; }
   .products__items li { font-size: 1.1rem; }
   .products__items .item2, .products__items .item4 { font-size: .7rem; margin-top: .02rem; }
+  .products__items .item3 { font-size: 1rem; }
   .products__items .products__image { align-self: center; justify-content: center; } }
 
 @media screen and (min-width: 1024px) { .products__items li { font-size: 1.2rem; }
