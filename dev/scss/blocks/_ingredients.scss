@@ -1,0 +1,26 @@
+.ingredients {
+  background-color: $dark-color;
+  padding: 1rem;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 360px;
+
+  & li {
+    padding-bottom: .5em;
+    margin-left: 1rem;
+  }
+
+  & li:first-letter {
+    text-transform: uppercase;
+  }
+
+  &__allergen {
+    width: 40px;
+    margin: 0 .25rem;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+  }
+}

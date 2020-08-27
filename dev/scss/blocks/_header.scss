@@ -1,0 +1,79 @@
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -92px;
+  grid-row: 1 / 2;
+  padding: 0 0 16px 0;
+  width: 100%;
+  background-color: $background-color2;
+  font-family: 'Raleway', sans-serif;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);;
+
+  & .title{
+    width: 100%;
+    font-size: 5rem;
+    color: $text-color4;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    & span:nth-child(2) {
+      color: $text-color3;
+    }
+    & span:nth-child(4) {
+      color: $text-color3;
+    }
+  }
+
+  & .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem auto 0;
+
+    &__icon {
+      margin: 0 1rem;
+
+      & a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    &__icon:first-child {
+      color: #00bb2d;
+    }
+    &__icon:nth-child(3) {
+      color: #3b5998;
+    }
+    &__icon:nth-child(4) {
+      color:  #517fa4;
+
+      & i {
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        -webkit-background-clip: text;
+        /* Also define standard property for compatibility */
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    &__icon:last-child {
+      color: #DD4B3E;
+
+      & i {
+        background: linear-gradient(135deg, rgba(30,163,98,1) 0%, rgba(255,224,71,1) 25%, rgba(74,137,243,1) 50%, rgba(221,75,62,1) 75%, rgba(130,47,43,1) 100%);
+        -webkit-background-clip: text;
+        /* Also define standard property for compatibility */
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  @include tablet {
+    grid-column: 1 / -1;
+  }
+
+  @include laptop {
+
+  }
+}

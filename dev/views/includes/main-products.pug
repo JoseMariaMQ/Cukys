@@ -1,0 +1,164 @@
+.products
+    h2 Entrantes
+.products__items
+    ol
+        each starter in starters
+            li
+                span.item1= starter
+                span.item2(id="info-starter-" + starters.indexOf(starter) data-name="starter") Ver alérgenos
+                span.item4(id="menu-starter-"+starters.indexOf(starter) data-name="starter") Con menú
+                span.item3= priceStarters[starters.indexOf(starter)]
+    .products__image
+        img(src="assets/img/fried.png" alt="starter")
+.products
+    h2 Patatas
+.products__items
+    ol
+        each chip in chips
+            li
+                span.item1= chip
+                span.item2(id="info-chip-" + chips.indexOf(chip) data-name="chips") Ver alérgenos
+                //span.item4 Con menú
+                span.item3= priceChips[chips.indexOf(chip)]
+    .products__image
+        img(src="assets/img/chips.png" alt="chips")
+.products
+    h2 Hamburguesas
+.products__items
+    ol
+        each burger in burgers
+            li
+                span.item1= burger
+                span.item2(id="info-burger-"+burgers.indexOf(burger) data-name="burger") Ingredientes
+                span.item4(id="menu-burger-"+burgers.indexOf(burger) data-name="burger") Con menú
+                span.item3= priceBurgers[burgers.indexOf(burger)]
+    .products__image
+        img(src="assets/img/burger.png" alt="burger")
+.products
+    h2 Guitarras
+.products__items
+    ol
+        each guitar in guitars
+            li
+                span.item1= guitar
+                span.item2(id="info-guitar-" + guitars.indexOf(guitar) data-name="guitar") Ingredientes
+                span.item4(id="menu-guitar-"+guitars.indexOf(guitar) data-name="guitar") Con menú
+                span.item3= priceGuitars[guitars.indexOf(guitar)]
+    .products__image
+        img(src="assets/img/guitar.png" alt="guitar")
+.products
+    h2 Baguettes
+.products__items
+    ol
+        each baguette in baguettes
+            li
+                span.item1= baguette
+                span.item2(id="info-baguette-" + baguettes.indexOf(baguette) data-name="baguette") Ingredientes
+                span.item4(id="menu-baguette-"+baguettes.indexOf(baguette) data-name="baguette") Con menú
+                span.item3= priceBaguettes[baguettes.indexOf(baguette)]
+    .products__image
+        img(src="assets/img/baguette.png" alt="baguette")
+.products
+    h2 Pizzas
+.products__items
+    ol
+        each pizza in pizzas
+            li
+                span.item1= pizza
+                span.item2(id="info-pizza-" + pizzas.indexOf(pizza) data-name="pizza") Ingredientes
+                span.item4(id="menu-pizza-"+pizzas.indexOf(pizza) data-name="pizza") Con menú
+                span.item3= pricePizzas[pizzas.indexOf(pizza)]
+    .products__image
+        img(src="assets/img/pizza.png" alt="pizza")
+.products
+    h2 Panini
+.products__items
+    ol
+        each panini in paninis
+            li
+                span.item1= panini
+                span.item2(id="info-panini-" + paninis.indexOf(panini) data-name="panini") Ingredientes
+                span.item4(id="menu-panini-"+paninis.indexOf(panini) data-name="panini") Con menú
+                span.item3= pricePaninis[paninis.indexOf(panini)]
+    .products__image
+        img(src="assets/img/panini.png" alt="panini")
+.products
+    h2 Sandwiches
+.products__items
+    ol
+        each sandwich in sandwiches
+            li
+                span.item1= sandwich
+                span.item2(id="info-sandwich-" + sandwiches.indexOf(sandwich) data-name="sandwich") Ingredientes
+                span.item4(id="menu-sandwich-"+sandwiches.indexOf(sandwich) data-name="sandwich") Con menú
+                span.item3= priceSandwiches[sandwiches.indexOf(sandwich)]
+    .products__image
+        img(src="assets/img/sandwich.png" alt="sandwich")
+.products
+    h2 Perrito Caliente
+.products__items
+    ol
+        each hotDog in hotDogs
+            li
+                span.item1= hotDog
+                span.item2(id="info-hotdog-" + hotDogs.indexOf(hotDog) data-name="hotdog") Ingredientes
+                span.item4(id="menu-hotdog-"+hotDogs.indexOf(hotDog) data-name="hotdog") Con menú
+                span.item3= priceHotDogs[hotDogs.indexOf(hotDog)]
+    .products__image
+        img(src="assets/img/hotdog.png" alt="hot dog")
+.products
+    h2 Kebab
+.products__items
+    ol
+        each kebab in kebabs
+            li
+                span.item1= kebab
+                span.item2(id="info-kebab-" + kebabs.indexOf(kebab) data-name="kebab") Ingredientes
+                span.item4(id="menu-kebab-"+kebabs.indexOf(kebab) data-name="kebab") Con menú
+                span.item3= priceKebabs[kebabs.indexOf(kebab)]
+    .products__image
+        img(src="assets/img/kebab.png" alt="kebab")
+.products
+    h2 Gofres
+.products__items
+    ol
+        each waffle in waffles
+            li
+                span.item1= waffle
+                span.item2(id="info-waffle-" + waffles.indexOf(waffle) data-name="waffle") Ver alérgenos
+                span.item3= priceWaffles[waffles.indexOf(waffle)]
+    .products__image
+        img(src="assets/img/waffle.png" alt="waffle")
+.products
+    h2 Crepes
+.products__items
+    ol
+        each crepe in crepes
+            li
+                span.item1= crepe
+                span.item2(id="info-crepe-" + crepes.indexOf(crepe) data-name="crepe") Ver alérgenos
+                span.item3= priceCrepes[crepes.indexOf(crepe)]
+    .products__image
+        img(src="assets/img/crepe.png" alt="crepe")
+.products
+    h2 Helados
+.products__items
+    ol
+        each iceCream in iceCreams
+            li
+                span.item1= iceCream
+                span.item2(id="info-icecream-" + iceCreams.indexOf(iceCream) data-name="icecream") Ver alérgenos
+                span.item3= priceIceCreams[iceCreams.indexOf(iceCream)]
+        span.item2.flavors(id="info-icecream" data-name="flavor") Ver sabores
+    .products__image
+        img(src="assets/img/icecream.png" alt="ice cream")
+.products
+    h2 Bebidas
+.products__items
+    ol
+        each drink in drinks
+            li
+                span.item1= drink
+                span.item3= priceDrinks[drinks.indexOf(drink)]
+    .products__image
+        img(src="assets/img/drink.png" alt="drink")

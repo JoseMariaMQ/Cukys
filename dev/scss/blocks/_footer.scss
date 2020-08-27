@@ -1,0 +1,13 @@
+.footer {
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid rgba(255, 255, 255, 0.4);
+  color: $dark-color2;
+
+  &__items {
+    display: block;
+  }
+}

@@ -1,0 +1,37 @@
+include ../config/config
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet" href="css/styles.css")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous")
+        title Cukys
+    body
+        header#header.header
+            block header
+        include ../includes/burger-ingredients
+        include ../includes/burger-menus
+        include ../includes/sandwich-ingredients
+        include ../includes/sandwich-menus
+        include ../includes/guitar-ingredients
+        include ../includes/guitar-menus
+        include ../includes/baguette-ingredients
+        include ../includes/baguette-menus
+        include ../includes/pizza-ingredients
+        include ../includes/pizza-menus
+        include ../includes/panini-ingredients
+        include ../includes/panini-menus
+        include ../includes/hotdog-ingredients
+        include ../includes/hotdog-menus
+        include ../includes/starters-allergens
+        include ../includes/starters-menus
+        include ../includes/kebab-menus
+        include ../includes/icecream-flavors
+        main.main
+            block products
+        footer.footer
+            block footer
+        script(src="js/scripts-min.js")
+

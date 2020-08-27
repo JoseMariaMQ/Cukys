@@ -1,0 +1,18 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 1fr 80px;
+
+  background-color: $background-color2;
+  color: $text-color3;
+  min-height: 100vh;
+  font-family: $main-font, 'sans-serif';
+
+  @include tablet {
+
+  }
+
+  @include laptop {
+
+  }
+}
