@@ -187,10 +187,12 @@ body { display: grid; grid-template-columns: 1fr; grid-template-rows: 150px 1fr 
 
 .ingredients li:first-letter { text-transform: uppercase; }
 
-.ingredients__allergen { width: 40px; margin: 0 .25rem; }
+.ingredients__allergen { width: 40px; margin: 0 .2rem; }
 
 .ingredients__img { display: flex; justify-content: center; }
 
 .footer { grid-column: 1 / -1; grid-row: 3 / 4; display: flex; align-items: center; justify-content: center; border-top: 2px solid rgba(255, 255, 255, 0.4); color: var(--dark-color2); }
 
-.footer__items { display: block; }
+.footer-items { display: block; }
+
+.footer-items__links { margin: 0 .25rem; text-decoration: none; color: inherit; }

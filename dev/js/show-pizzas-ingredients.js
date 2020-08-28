@@ -23,7 +23,7 @@ const infoPizza8 = document.getElementById('info-pizza-7')
 const fourCheesePizzaIngredients = document.getElementById('fourcheese-pizza-ingredients')
 
 const infoPizza9 = document.getElementById('info-pizza-8')
-const chickenBaconPizzaIngredients = document.getElementById('chickenbacon-pizza-ingredients')
+const baconChickenPizzaIngredients = document.getElementById('baconchicken-pizza-ingredients')
 
 const infoPizza10 = document.getElementById('info-pizza-9')
 const miniPizzaIngredients = document.getElementById('mini-pizza-ingredients')
@@ -185,16 +185,16 @@ if(infoPizza9) {
     infoPizza9.addEventListener('click', (e) => {
         if(e.target.dataset.name !== undefined) {
             if(e.target.dataset.name === 'pizza') {
-                chickenBaconPizzaIngredients.classList.add('lightbox--show')
+                baconChickenPizzaIngredients.classList.add('lightbox--show')
             }
         }
     })
 }
 
-if(chickenBaconPizzaIngredients) {
-    chickenBaconPizzaIngredients.addEventListener('click', (e) => {
+if(baconChickenPizzaIngredients) {
+    baconChickenPizzaIngredients.addEventListener('click', (e) => {
         if(e.target.classList.contains('lightbox')) {
-            chickenBaconPizzaIngredients.classList.remove('lightbox--show')
+            baconChickenPizzaIngredients.classList.remove('lightbox--show')
         }
     })
 }
