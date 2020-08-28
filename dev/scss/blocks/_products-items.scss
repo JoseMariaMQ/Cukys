@@ -36,17 +36,6 @@
     margin-right: .2rem;
   }
 
-  & .item4 {
-    cursor: pointer;
-    background-color: $primary-color;
-    color: $text-color;
-    padding: .23rem .3rem;
-    border-radius: 15px;
-    font-size: .6rem;
-    //margin-top: -.8em;
-    float: right;
-  }
-
   & .flavors {
     float: left;
     margin-left: .5rem;
@@ -64,7 +53,7 @@
       font-size: 1.1rem;
     }
 
-    & .item2, .item4 {
+    & .item2 {
       font-size: .7rem;
       margin-top: .02rem;
     }
@@ -85,7 +74,7 @@
       font-size: 1.2rem;
     }
 
-    & .item2, .item4 {
+    & .item2 {
       font-size: .8rem;
       margin-top: 0;
     }
