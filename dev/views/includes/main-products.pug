@@ -13,11 +13,39 @@
     h2 Patatas
 .products__items
     ol
-        each chip in chips
-            li
-                span.item1= chip
-                span.item2(id="info-chips-" + chips.indexOf(chip) data-name="chips") ALÉRGENOS / +INFO
-                span.item3= priceChips[chips.indexOf(chip)]
+        li
+            span.item1= chips[0]
+            span.item3= priceChips[0]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/gluten.svg' alt='gluten')
+                    img.ingredients__allergen2(src='assets/img/gallery/egg.svg' alt='egg')
+                    img.ingredients__allergen2(src='assets/img/gallery/sulfurDioxideSulphites.svg' alt='sulfur dioxide sulphites')
+        li
+            span.item1= chips[1]
+            span.item3= priceChips[1]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/gluten.svg' alt='gluten')
+                    img.ingredients__allergen2(src='assets/img/gallery/sulfurDioxideSulphites.svg' alt='sulfur dioxide sulphites')
+        li
+            span.item1= chips[2]
+            span.item3= priceChips[2]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/gluten.svg' alt='gluten')
+                    img.ingredients__allergen2(src='assets/img/gallery/dairyProducts.svg' alt='dairy products')
+                    img.ingredients__allergen2(src='assets/img/gallery/sulfurDioxideSulphites.svg' alt='sulfur dioxide sulphites')
+        li
+            span.item1= chips[3]
+            span.item3= priceChips[3]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/gluten.svg' alt='gluten')
+                    img.ingredients__allergen2(src='assets/img/gallery/dairyProducts.svg' alt='dairy products')
+                    img.ingredients__allergen2(src='assets/img/gallery/sulfurDioxideSulphites.svg' alt='sulfur dioxide sulphites')
+        li
+            span.item1= chips[4]
+            span.item3= priceChips[4]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/gluten.svg' alt='gluten')
+                    img.ingredients__allergen2(src='assets/img/gallery/sulfurDioxideSulphites.svg' alt='sulfur dioxide sulphites')
     .products__image
         img(src="assets/img/chips.png" alt="chips")
 .products
@@ -112,33 +140,140 @@
     h2 Gofres
 .products__items
     ol
-        each waffle in waffles
-            li
-                span.item1= waffle
-                span.item2(id="info-waffle-" + waffles.indexOf(waffle) data-name="waffle") ALÉRGENOS / +INFO
-                span.item3= priceWaffles[waffles.indexOf(waffle)]
+        li
+            span.item1= waffles[0]
+            span.item3= priceWaffles[0]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/gluten.svg' alt='gluten')
+                    img.ingredients__allergen2(src='assets/img/gallery/egg.svg' alt='egg')
+                    img.ingredients__allergen2(src='assets/img/gallery/peanuts.svg' alt='peanuts')
+                    img.ingredients__allergen2(src='assets/img/gallery/dairyProducts.svg' alt='dairy products')
+                    img.ingredients__allergen2(src='assets/img/gallery/peelFruits.svg' alt='peel fruits')
+                    img.ingredients__allergen2(src='assets/img/gallery/lupins.svg' alt='lupins')
+        li
+            span.item1= waffles[1]
+            span.item3= priceWaffles[1]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/gluten.svg' alt='gluten')
+                    img.ingredients__allergen2(src='assets/img/gallery/peanuts.svg' alt='peanuts')
+                    img.ingredients__allergen2(src='assets/img/gallery/dairyProducts.svg' alt='dairy products')
+                    img.ingredients__allergen2(src='assets/img/gallery/peelFruits.svg' alt='peel fruits')
+                    img.ingredients__allergen2(src='assets/img/gallery/egg.svg' alt='egg')
+                    img.ingredients__allergen2(src='assets/img/gallery/sulfurDioxideSulphites.svg' alt='sulfur dioxide sulphites')
     .products__image
         img(src="assets/img/waffle.png" alt="waffle")
 .products
     h2 Crepes
 .products__items
     ol
-        each crepe in crepes
-            li
-                span.item1= crepe
-                span.item2(id="info-crepe-" + crepes.indexOf(crepe) data-name="crepe") ALÉRGENOS / +INFO
-                span.item3= priceCrepes[crepes.indexOf(crepe)]
+        li
+            span.item1= crepes[0]
+            span.item3= priceCrepes[0]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/gluten.svg' alt='gluten')
+                    img.ingredients__allergen2(src='assets/img/gallery/egg.svg' alt='egg')
+                    img.ingredients__allergen2(src='assets/img/gallery/peanuts.svg' alt='peanuts')
+                    img.ingredients__allergen2(src='assets/img/gallery/dairyProducts.svg' alt='dairy products')
+                    img.ingredients__allergen2(src='assets/img/gallery/peelFruits.svg' alt='peel fruits')
+                    img.ingredients__allergen2(src='assets/img/gallery/lupins.svg' alt='lupins')
+        li
+            span.item1= crepes[1]
+            span.item3= priceCrepes[1]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/gluten.svg' alt='gluten')
+                    img.ingredients__allergen2(src='assets/img/gallery/egg.svg' alt='egg')
+                    img.ingredients__allergen2(src='assets/img/gallery/peanuts.svg' alt='peanuts')
+                    img.ingredients__allergen2(src='assets/img/gallery/dairyProducts.svg' alt='dairy products')
+                    img.ingredients__allergen2(src='assets/img/gallery/peelFruits.svg' alt='peel fruits')
+                    img.ingredients__allergen2(src='assets/img/gallery/lupins.svg' alt='lupins')
+                    img.ingredients__allergen2(src='assets/img/gallery/sulfurDioxideSulphites.svg' alt='sulfur dioxide sulphites')
+        li
+            span.item1= crepes[2]
+            span.item3= priceCrepes[2]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/gluten.svg' alt='gluten')
+                    img.ingredients__allergen2(src='assets/img/gallery/egg.svg' alt='egg')
+                    img.ingredients__allergen2(src='assets/img/gallery/peanuts.svg' alt='peanuts')
+                    img.ingredients__allergen2(src='assets/img/gallery/dairyProducts.svg' alt='dairy products')
+                    img.ingredients__allergen2(src='assets/img/gallery/peelFruits.svg' alt='peel fruits')
+                    img.ingredients__allergen2(src='assets/img/gallery/lupins.svg' alt='lupins')
+        li
+            span.item1= crepes[3]
+            span.item3= priceCrepes[3]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/gluten.svg' alt='gluten')
+                    img.ingredients__allergen2(src='assets/img/gallery/egg.svg' alt='egg')
+                    img.ingredients__allergen2(src='assets/img/gallery/peanuts.svg' alt='peanuts')
+                    img.ingredients__allergen2(src='assets/img/gallery/dairyProducts.svg' alt='dairy products')
+                    img.ingredients__allergen2(src='assets/img/gallery/peelFruits.svg' alt='peel fruits')
+                    img.ingredients__allergen2(src='assets/img/gallery/lupins.svg' alt='lupins')
+        li
+            span.item1= crepes[4]
+            span.item3= priceCrepes[4]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/gluten.svg' alt='gluten')
+                    img.ingredients__allergen2(src='assets/img/gallery/egg.svg' alt='egg')
+                    img.ingredients__allergen2(src='assets/img/gallery/peanuts.svg' alt='peanuts')
+                    img.ingredients__allergen2(src='assets/img/gallery/dairyProducts.svg' alt='dairy products')
+                    img.ingredients__allergen2(src='assets/img/gallery/peelFruits.svg' alt='peel fruits')
+                    img.ingredients__allergen2(src='assets/img/gallery/lupins.svg' alt='lupins')
+        li
+            span.item1= crepes[5]
+            span.item3= priceCrepes[5]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/gluten.svg' alt='gluten')
+                    img.ingredients__allergen2(src='assets/img/gallery/dairyProducts.svg' alt='dairy products')
     .products__image
         img(src="assets/img/crepe.png" alt="crepe")
 .products
     h2 Helados
 .products__items
     ol
-        each iceCream in iceCreams
-            li
-                span.item1= iceCream
-                span.item2(id="info-icecream-" + iceCreams.indexOf(iceCream) data-name="icecream") ALÉRGENOS / +INFO
-                span.item3= priceIceCreams[iceCreams.indexOf(iceCream)]
+        li
+            span.item1= iceCreams[0]
+            span.item3= priceIceCreams[0]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/egg.svg' alt='egg')
+                    img.ingredients__allergen2(src='assets/img/gallery/dairyProducts.svg' alt='dairy products')
+                    img.ingredients__allergen2(src='assets/img/gallery/sulfurDioxideSulphites.svg' alt='sulfur dioxide sulphites')
+        li
+            span.item1= iceCreams[1]
+            span.item3= priceIceCreams[1]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/egg.svg' alt='egg')
+                    img.ingredients__allergen2(src='assets/img/gallery/dairyProducts.svg' alt='dairy products')
+                    img.ingredients__allergen2(src='assets/img/gallery/sulfurDioxideSulphites.svg' alt='sulfur dioxide sulphites')
+        li
+            span.item1= iceCreams[2]
+            span.item3= priceIceCreams[2]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/egg.svg' alt='egg')
+                    img.ingredients__allergen2(src='assets/img/gallery/dairyProducts.svg' alt='dairy products')
+                    img.ingredients__allergen2(src='assets/img/gallery/sulfurDioxideSulphites.svg' alt='sulfur dioxide sulphites')
+        li
+            span.item1= iceCreams[3]
+            span.item3= priceIceCreams[3]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/egg.svg' alt='egg')
+                    img.ingredients__allergen2(src='assets/img/gallery/dairyProducts.svg' alt='dairy products')
+                    img.ingredients__allergen2(src='assets/img/gallery/sulfurDioxideSulphites.svg' alt='sulfur dioxide sulphites')
+        li
+            span.item1= iceCreams[4]
+            span.item3= priceIceCreams[4]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/dairyProducts.svg' alt='dairy products')
+                    img.ingredients__allergen2(src='assets/img/gallery/sulfurDioxideSulphites.svg' alt='sulfur dioxide sulphites')
+        li
+            span.item1= iceCreams[5]
+            span.item3= priceIceCreams[5]
+                .item4
+
+        li
+            span.item1= iceCreams[6]
+            span.item3= priceIceCreams[6]
+                .item4
+                    img.ingredients__allergen2(src='assets/img/gallery/dairyProducts.svg' alt='dairy products')
+                    img.ingredients__allergen2(src='assets/img/gallery/sulfurDioxideSulphites.svg' alt='sulfur dioxide sulphites')
         span.item2.flavors(id="info-icecream" data-name="flavor") VER SABORES
     .products__image
         img(src="assets/img/icecream.png" alt="ice cream")

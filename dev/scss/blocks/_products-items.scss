@@ -1,22 +1,51 @@
 .products__items {
   & ol {
     margin-left: -1rem;
-  }
 
-  & li {
-    margin-bottom: .5em;
-    margin-right: .5em;
-    margin-left: .5rem;
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 15px;
-  }
+    & li {
+      margin-bottom: .5em;
+      margin-right: .5em;
+      margin-left: .5rem;
+      background-color: rgba(255, 255, 255, 0.4);
+      border-radius: 15px;
 
-  & li:first-letter {
-    text-transform: uppercase;
-  }
+      & .item1 {
+        font-size: .9rem;
+        margin-left: .5rem;
+      }
 
-  & .item1 {
-    margin-left: .5rem;
+      & .item2 {
+        cursor: pointer;
+        background-color: $primary-color;
+        color: $text-color;
+        padding: .23rem .4rem;
+        border-radius: 15px;
+        font-size: .6rem;
+        float: right;
+      }
+
+      & .item3 {
+        font-size: .6rem;
+        float: right;
+        margin-top: .25rem;
+        margin-right: .2rem;
+
+        & .item4 {
+          float: left;
+          margin-right: .3rem;
+          margin-top: -.23rem;
+          & .ingredients__allergen2 {
+            width: 18px;
+          }
+        }
+      }
+
+    }
+
+    & li:first-letter {
+      text-transform: uppercase;
+    }
+
   }
 
   & .item2 {
@@ -26,14 +55,6 @@
     padding: .23rem .4rem;
     border-radius: 15px;
     font-size: .6rem;
-    float: right;
-  }
-
-  & .item3 {
-    font-size: .6rem;
-    float: right;
-    margin-top: .25rem;
-    margin-right: .2rem;
   }
 
   & .flavors {
@@ -51,15 +72,15 @@
 
     & li {
       font-size: 1.1rem;
-    }
 
-    & .item2 {
-      font-size: .7rem;
-      margin-top: .02rem;
-    }
+      & .item2 {
+        font-size: .7rem;
+        margin-top: .02rem;
+      }
 
-    & .item3 {
-      font-size: 1rem;
+      & .item3 {
+        font-size: 1rem;
+      }
     }
 
     & .products__image {
@@ -72,11 +93,11 @@
 
     & li {
       font-size: 1.2rem;
-    }
 
-    & .item2 {
-      font-size: .8rem;
-      margin-top: 0;
+      & .item2 {
+        font-size: .8rem;
+        margin-top: 0;
+      }
     }
 
   }
