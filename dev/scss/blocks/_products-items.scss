@@ -49,7 +49,7 @@
 
   & .flavors {
     float: left;
-    margin-left: 0;
+    margin-left: .5rem;
   }
 
   & .products__image {
@@ -90,9 +90,6 @@
       margin-top: 0;
     }
 
-    & .products__image {
-
-    }
   }
 
   @include desktop {

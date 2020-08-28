@@ -16,8 +16,7 @@
         each chip in chips
             li
                 span.item1= chip
-                span.item2(id="info-chip-" + chips.indexOf(chip) data-name="chips") Ver alérgenos
-                //span.item4 Con menú
+                span.item2(id="info-chips-" + chips.indexOf(chip) data-name="chips") ALÉRGENOS / +INFO
                 span.item3= priceChips[chips.indexOf(chip)]
     .products__image
         img(src="assets/img/chips.png" alt="chips")
@@ -105,8 +104,7 @@
         each kebab in kebabs
             li
                 span.item1= kebab
-                span.item2(id="info-kebab-" + kebabs.indexOf(kebab) data-name="kebab") Ingredientes
-                span.item4(id="menu-kebab-"+kebabs.indexOf(kebab) data-name="kebab") Con menú
+                span.item2(id="info-kebab-" + kebabs.indexOf(kebab) data-name="kebab") HAZLO MENÚ / +INFO
                 span.item3= priceKebabs[kebabs.indexOf(kebab)]
     .products__image
         img(src="assets/img/kebab.png" alt="kebab")
@@ -117,7 +115,7 @@
         each waffle in waffles
             li
                 span.item1= waffle
-                span.item2(id="info-waffle-" + waffles.indexOf(waffle) data-name="waffle") Ver alérgenos
+                span.item2(id="info-waffle-" + waffles.indexOf(waffle) data-name="waffle") ALÉRGENOS / +INFO
                 span.item3= priceWaffles[waffles.indexOf(waffle)]
     .products__image
         img(src="assets/img/waffle.png" alt="waffle")
@@ -128,7 +126,7 @@
         each crepe in crepes
             li
                 span.item1= crepe
-                span.item2(id="info-crepe-" + crepes.indexOf(crepe) data-name="crepe") Ver alérgenos
+                span.item2(id="info-crepe-" + crepes.indexOf(crepe) data-name="crepe") ALÉRGENOS / +INFO
                 span.item3= priceCrepes[crepes.indexOf(crepe)]
     .products__image
         img(src="assets/img/crepe.png" alt="crepe")
@@ -139,9 +137,9 @@
         each iceCream in iceCreams
             li
                 span.item1= iceCream
-                span.item2(id="info-icecream-" + iceCreams.indexOf(iceCream) data-name="icecream") Ver alérgenos
+                span.item2(id="info-icecream-" + iceCreams.indexOf(iceCream) data-name="icecream") ALÉRGENOS / +INFO
                 span.item3= priceIceCreams[iceCreams.indexOf(iceCream)]
-        span.item2.flavors(id="info-icecream" data-name="flavor") Ver sabores
+        span.item2.flavors(id="info-icecream" data-name="flavor") VER SABORES
     .products__image
         img(src="assets/img/icecream.png" alt="ice cream")
 .products

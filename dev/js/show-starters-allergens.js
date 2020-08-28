@@ -13,6 +13,15 @@ const sanjacoboStarterAllergens = document.getElementById('sanjacobo-starter-all
 const infoStarter5 = document.getElementById('info-starter-4')
 const twisterStarterAllergens = document.getElementById('twister-starter-allergens')
 
+const infoStarter6 = document.getElementById('info-starter-5')
+const fingersStarterAllergens = document.getElementById('fingers-starter-allergens')
+
+const infoStarter7 = document.getElementById('info-starter-6')
+const torpedoStarterAllergens = document.getElementById('torpedo-starter-allergens')
+
+const infoStarter8 = document.getElementById('info-starter-7')
+const chickenDelicaciesStarterAllergens = document.getElementById('chickendelicacies-starter-allergens')
+
 //Show nugget starter allergens
 if(infoStarter1) {
     infoStarter1.addEventListener('click', (e) => {
@@ -89,7 +98,7 @@ if(sanjacoboStarterAllergens) {
     })
 }
 
-//Show chips starter allergens
+//Show twister starter allergens
 if(infoStarter5) {
     infoStarter5.addEventListener('click', (e) => {
         if(e.target.dataset.name !== undefined) {
@@ -104,6 +113,63 @@ if(twisterStarterAllergens) {
     twisterStarterAllergens.addEventListener('click', (e) => {
         if(e.target.classList.contains('lightbox')) {
             twisterStarterAllergens.classList.remove('lightbox--show')
+        }
+    })
+}
+
+//Show fingers starter allergens
+if(infoStarter6) {
+    infoStarter6.addEventListener('click', (e) => {
+        if(e.target.dataset.name !== undefined) {
+            if(e.target.dataset.name === 'starter') {
+                fingersStarterAllergens.classList.add('lightbox--show')
+            }
+        }
+    })
+}
+
+if(fingersStarterAllergens) {
+    fingersStarterAllergens.addEventListener('click', (e) => {
+        if(e.target.classList.contains('lightbox')) {
+            fingersStarterAllergens.classList.remove('lightbox--show')
+        }
+    })
+}
+
+//Show torpedo starter allergens
+if(infoStarter7) {
+    infoStarter7.addEventListener('click', (e) => {
+        if(e.target.dataset.name !== undefined) {
+            if(e.target.dataset.name === 'starter') {
+                torpedoStarterAllergens.classList.add('lightbox--show')
+            }
+        }
+    })
+}
+
+if(torpedoStarterAllergens) {
+    torpedoStarterAllergens.addEventListener('click', (e) => {
+        if(e.target.classList.contains('lightbox')) {
+            torpedoStarterAllergens.classList.remove('lightbox--show')
+        }
+    })
+}
+
+//Show torpedo starter allergens
+if(infoStarter8) {
+    infoStarter8.addEventListener('click', (e) => {
+        if(e.target.dataset.name !== undefined) {
+            if(e.target.dataset.name === 'starter') {
+                chickenDelicaciesStarterAllergens.classList.add('lightbox--show')
+            }
+        }
+    })
+}
+
+if(chickenDelicaciesStarterAllergens) {
+    chickenDelicaciesStarterAllergens.addEventListener('click', (e) => {
+        if(e.target.classList.contains('lightbox')) {
+            chickenDelicaciesStarterAllergens.classList.remove('lightbox--show')
         }
     })
 }

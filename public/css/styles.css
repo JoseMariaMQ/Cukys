@@ -166,7 +166,7 @@ body { display: grid; grid-template-columns: 1fr; grid-template-rows: 150px 1fr 
 
 .products__items .item4 { cursor: pointer; background-color: var(--primary-color); color: var(--text-color); padding: .23rem .3rem; border-radius: 15px; font-size: .6rem; float: right; }
 
-.products__items .flavors { float: left; margin-left: 0; }
+.products__items .flavors { float: left; margin-left: .5rem; }
 
 .products__items .products__image { text-align: center; }
 
