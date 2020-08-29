@@ -8,35 +8,35 @@
       margin-left: .5rem;
       background-color: rgba(255, 255, 255, 0.4);
       border-radius: 15px;
-
-      & .item1 {
-        font-size: .9rem;
-        margin-left: .5rem;
       }
 
-      & .item2 {
-        cursor: pointer;
-        background-color: $primary-color;
-        color: $text-color;
-        padding: .23rem .4rem;
-        border-radius: 15px;
-        font-size: .6rem;
-        float: right;
-      }
+    & .item1 {
+      font-size: .9rem;
+      margin-left: .5rem;
+    }
 
-      & .item3 {
-        font-size: .6rem;
-        float: right;
-        margin-top: .25rem;
-        margin-right: .2rem;
+    & .item2 {
+      cursor: pointer;
+      background-color: $primary-color;
+      color: $text-color;
+      padding: .23rem .4rem;
+      border-radius: 15px;
+      font-size: .6rem;
+      float: right;
+    }
 
-        & .item4 {
-          float: left;
-          margin-right: .3rem;
-          margin-top: -.23rem;
-          & .ingredients__allergen2 {
-            width: 18px;
-          }
+    & .item3 {
+      font-size: .6rem;
+      float: right;
+      margin-top: .25rem;
+      margin-right: .2rem;
+
+      & .item4 {
+        float: left;
+        margin-right: .3rem;
+        margin-top: -.23rem;
+        & .ingredients__allergen2 {
+          width: 18px;
         }
       }
 
@@ -59,7 +59,7 @@
 
   & .flavors {
     float: left;
-    margin-left: .5rem;
+    margin-right: .5rem;
   }
 
   & .products__image {
@@ -71,7 +71,9 @@
     grid-template-columns: 4fr 1fr;
 
     & li {
-      font-size: 1.1rem;
+      & .item1 {
+        font-size: 1.1rem;
+      }
 
       & .item2 {
         font-size: .7rem;
@@ -93,11 +95,11 @@
 
     & li {
       font-size: 1.2rem;
+    }
 
-      & .item2 {
-        font-size: .8rem;
-        margin-top: 0;
-      }
+    & .item2 {
+      font-size: .8rem;
+      margin-top: 0;
     }
 
   }
