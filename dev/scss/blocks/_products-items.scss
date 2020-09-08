@@ -16,13 +16,18 @@
     }
 
     & .item2 {
-      cursor: pointer;
       background-color: $primary-color;
       color: $text-color;
       padding: .23rem .4rem;
+      border: none;
       border-radius: 15px;
       font-size: .6rem;
+      box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.5);
       float: right;
+
+      & i {
+        margin-left: .3rem;
+      }
     }
 
     & .item3 {
@@ -85,6 +90,11 @@
       }
     }
 
+    & .flavors {
+      font-size: .7rem;
+      margin-top: .02rem;
+    }
+
     & .products__image {
       align-self: center;
       justify-content: center;
@@ -94,14 +104,20 @@
   @include laptop {
 
     & li {
-      font-size: 1.2rem;
+      & .item1 {
+        font-size: 1.2rem;
+      }
+
+      & .item2 {
+        font-size: .8rem;
+        margin-top: 0;
+      }
     }
 
-    & .item2 {
+    & .flavors {
       font-size: .8rem;
-      margin-top: 0;
+      margin-top: .02rem;
     }
-
   }
 
 }

@@ -5,7 +5,8 @@
         each starter in starters
             li
                 span.item1= starter
-                span.item2(id="info-starter-" + starters.indexOf(starter) data-name="starter") HAZLO MENÚ / +INFO
+                button.item2(type="button" id="info-starter-" + starters.indexOf(starter) data-name="starter") HAZLO MENÚ / +INFO
+                    i.fas.fa-hand-pointer
                 span.item3= priceStarters[starters.indexOf(starter)]
     .products__image
         img(src="assets/img/fried.png" alt="starter")
@@ -55,7 +56,8 @@
         each burger in burgers
             li
                 span.item1= burger
-                span.item2(id="info-burger-"+burgers.indexOf(burger) data-name="burger") HAZLO MENÚ / +INFO
+                button.item2(type="button" id="info-burger-"+burgers.indexOf(burger) data-name="burger") HAZLO MENÚ / +INFO
+                    i.fas.fa-hand-pointer
                 span.item3= priceBurgers[burgers.indexOf(burger)]
     .products__image
         img(src="assets/img/burger.png" alt="burger")
@@ -66,7 +68,8 @@
         each guitar in guitars
             li
                 span.item1= guitar
-                span.item2(id="info-guitar-" + guitars.indexOf(guitar) data-name="guitar") HAZLO MENÚ / +INFO
+                button.item2(type="button" id="info-guitar-" + guitars.indexOf(guitar) data-name="guitar") HAZLO MENÚ / +INFO
+                    i.fas.fa-hand-pointer
                 span.item3= priceGuitars[guitars.indexOf(guitar)]
     .products__image
         img(src="assets/img/guitar.png" alt="guitar")
@@ -77,7 +80,8 @@
         each baguette in baguettes
             li
                 span.item1= baguette
-                span.item2(id="info-baguette-" + baguettes.indexOf(baguette) data-name="baguette") HAZLO MENÚ / +INFO
+                button.item2(type="button" id="info-baguette-" + baguettes.indexOf(baguette) data-name="baguette") HAZLO MENÚ / +INFO
+                    i.fas.fa-hand-pointer
                 span.item3= priceBaguettes[baguettes.indexOf(baguette)]
     .products__image
         img(src="assets/img/baguette.png" alt="baguette")
@@ -88,7 +92,8 @@
         each pizza in pizzas
             li
                 span.item1= pizza
-                span.item2(id="info-pizza-" + pizzas.indexOf(pizza) data-name="pizza") HAZLO MENÚ / +INFO
+                button.item2(type="button" id="info-pizza-" + pizzas.indexOf(pizza) data-name="pizza") HAZLO MENÚ / +INFO
+                    i.fas.fa-hand-pointer
                 span.item3= pricePizzas[pizzas.indexOf(pizza)]
     .products__image
         img(src="assets/img/pizza.png" alt="pizza")
@@ -99,7 +104,8 @@
         each panini in paninis
             li
                 span.item1= panini
-                span.item2(id="info-panini-" + paninis.indexOf(panini) data-name="panini") HAZLO MENÚ / +INFO
+                button.item2(type="button" id="info-panini-" + paninis.indexOf(panini) data-name="panini") HAZLO MENÚ / +INFO
+                    i.fas.fa-hand-pointer
                 span.item3= pricePaninis[paninis.indexOf(panini)]
     .products__image
         img(src="assets/img/panini.png" alt="panini")
@@ -110,7 +116,8 @@
         each sandwich in sandwiches
             li
                 span.item1= sandwich
-                span.item2(id="info-sandwich-" + sandwiches.indexOf(sandwich) data-name="sandwich") HAZLO MENÚ / +INFO
+                button.item2(type="button" id="info-sandwich-" + sandwiches.indexOf(sandwich) data-name="sandwich") HAZLO MENÚ / +INFO
+                    i.fas.fa-hand-pointer
                 span.item3= priceSandwiches[sandwiches.indexOf(sandwich)]
     .products__image
         img(src="assets/img/sandwich.png" alt="sandwich")
@@ -121,7 +128,8 @@
         each hotDog in hotDogs
             li
                 span.item1= hotDog
-                span.item2(id="info-hotdog-" + hotDogs.indexOf(hotDog) data-name="hotdog") HAZLO MENÚ / +INFO
+                button.item2(type="button" id="info-hotdog-" + hotDogs.indexOf(hotDog) data-name="hotdog") HAZLO MENÚ / +INFO
+                    i.fas.fa-hand-pointer
                 span.item3= priceHotDogs[hotDogs.indexOf(hotDog)]
     .products__image
         img(src="assets/img/hotdog.png" alt="hot dog")
@@ -132,7 +140,8 @@
         each kebab in kebabs
             li
                 span.item1= kebab
-                span.item2(id="info-kebab-" + kebabs.indexOf(kebab) data-name="kebab") HAZLO MENÚ / +INFO
+                button.item2(type="button" id="info-kebab-" + kebabs.indexOf(kebab) data-name="kebab") HAZLO MENÚ / +INFO
+                    i.fas.fa-hand-pointer
                 span.item3= priceKebabs[kebabs.indexOf(kebab)]
     .products__image
         img(src="assets/img/kebab.png" alt="kebab")
@@ -274,7 +283,8 @@
                 .item4
                     img.ingredients__allergen2(src='assets/img/gallery/dairyProducts.svg' alt='dairy products')
                     img.ingredients__allergen2(src='assets/img/gallery/sulfurDioxideSulphites.svg' alt='sulfur dioxide sulphites')
-        span.item2.flavors(id="info-icecream" data-name="flavor") VER SABORES
+        button.item2.flavors(type="button" id="info-icecream" data-name="flavor") VER SABORES
+            i.fas.fa-hand-pointer
     .products__image
         img(src="assets/img/icecream.png" alt="ice cream")
 .products

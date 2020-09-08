@@ -22,6 +22,9 @@ const torpedoStarterAllergens = document.getElementById('torpedo-starter-allerge
 const infoStarter8 = document.getElementById('info-starter-7')
 const chickenDelicaciesStarterAllergens = document.getElementById('chickendelicacies-starter-allergens')
 
+//Pruebas
+
+
 //Show nugget starter allergens
 if(infoStarter1) {
     infoStarter1.addEventListener('click', (e) => {
