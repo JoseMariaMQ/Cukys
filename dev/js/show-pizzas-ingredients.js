@@ -1,219 +1,135 @@
-const infoPizza1 = document.getElementById('info-pizza-0')
-const margaritaPizzaIngredients = document.getElementById('margarita-pizza-ingredients')
-
-const infoPizza2 = document.getElementById('info-pizza-1')
-const camperaPizzaIngredients = document.getElementById('campera-pizza-ingredients')
-
-const infoPizza3 = document.getElementById('info-pizza-2')
-const mincePizzaIngredients = document.getElementById('mince-pizza-ingredients')
-
-const infoPizza4 = document.getElementById('info-pizza-3')
-const crabPizzaIngredients = document.getElementById('crab-pizza-ingredients')
-
-const infoPizza5 = document.getElementById('info-pizza-4')
-const baconPizzaIngredients = document.getElementById('bacon-pizza-ingredients')
-
-const infoPizza6 = document.getElementById('info-pizza-5')
-const kebabPizzaIngredients = document.getElementById('kebab-pizza-ingredients')
-
-const infoPizza7 = document.getElementById('info-pizza-6')
-const frankfurtPizzaIngredients = document.getElementById('frankfurt-pizza-ingredients')
-
-const infoPizza8 = document.getElementById('info-pizza-7')
-const fourCheesePizzaIngredients = document.getElementById('fourcheese-pizza-ingredients')
-
-const infoPizza9 = document.getElementById('info-pizza-8')
-const baconChickenPizzaIngredients = document.getElementById('baconchicken-pizza-ingredients')
-
-const infoPizza10 = document.getElementById('info-pizza-9')
-const miniPizzaIngredients = document.getElementById('mini-pizza-ingredients')
-
-//Show margarita pizza ingredients
-if(infoPizza1) {
-    infoPizza1.addEventListener('click', (e) => {
-        if(e.target.dataset.name !== undefined) {
-            if(e.target.dataset.name === 'pizza') {
-                margaritaPizzaIngredients.classList.add('lightbox--show')
+//Show pizza ingredients
+for(let button of buttons) {
+    if(button.dataset.name !== undefined) {
+        if (button.dataset.name === 'pizza') {
+            switch (button.id) {
+                case 'info-pizza-0':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'margarita-pizza-ingredients') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
+                case 'info-pizza-1':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'campera-pizza-ingredients') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
+                case 'info-pizza-2':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'mince-pizza-ingredients') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
+                case 'info-pizza-3':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'crab-pizza-ingredients') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
+                case 'info-pizza-4':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'bacon-pizza-ingredients') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
+                case 'info-pizza-5':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'kebab-pizza-ingredients') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
+                case 'info-pizza-6':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'frankfurt-pizza-ingredients') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
+                case 'info-pizza-7':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'fourcheese-pizza-ingredients') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
+                case 'info-pizza-8':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'baconchicken-pizza-ingredients') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
+                case 'info-pizza-9':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'mini-pizza-ingredients') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
             }
         }
-    })
+    }
 }
 
-if(margaritaPizzaIngredients) {
-    margaritaPizzaIngredients.addEventListener('click', (e) => {
-        if(e.target.classList.contains('lightbox')) {
-            margaritaPizzaIngredients.classList.remove('lightbox--show')
-        }
-    })
-}
-
-//Show campera pizza ingredients
-if(infoPizza2) {
-    infoPizza2.addEventListener('click', (e) => {
-        if(e.target.dataset.name !== undefined) {
-            if(e.target.dataset.name === 'pizza') {
-                camperaPizzaIngredients.classList.add('lightbox--show')
-            }
-        }
-    })
-}
-
-if(camperaPizzaIngredients) {
-    camperaPizzaIngredients.addEventListener('click', (e) => {
-        if(e.target.classList.contains('lightbox')) {
-            camperaPizzaIngredients.classList.remove('lightbox--show')
-        }
-    })
-}
-
-//Show mince pizza ingredients
-if(infoPizza3) {
-    infoPizza3.addEventListener('click', (e) => {
-        if(e.target.dataset.name !== undefined) {
-            if(e.target.dataset.name === 'pizza') {
-                mincePizzaIngredients.classList.add('lightbox--show')
-            }
-        }
-    })
-}
-
-if(mincePizzaIngredients) {
-    mincePizzaIngredients.addEventListener('click', (e) => {
-        if(e.target.classList.contains('lightbox')) {
-            mincePizzaIngredients.classList.remove('lightbox--show')
-        }
-    })
-}
-
-//Show crab pizza ingredients
-if(infoPizza4) {
-    infoPizza4.addEventListener('click', (e) => {
-        if(e.target.dataset.name !== undefined) {
-            if(e.target.dataset.name === 'pizza') {
-                crabPizzaIngredients.classList.add('lightbox--show')
-            }
-        }
-    })
-}
-
-if(crabPizzaIngredients) {
-    crabPizzaIngredients.addEventListener('click', (e) => {
-        if(e.target.classList.contains('lightbox')) {
-            crabPizzaIngredients.classList.remove('lightbox--show')
-        }
-    })
-}
-
-//Show bacon pizza ingredients
-if(infoPizza5) {
-    infoPizza5.addEventListener('click', (e) => {
-        if(e.target.dataset.name !== undefined) {
-            if(e.target.dataset.name === 'pizza') {
-                baconPizzaIngredients.classList.add('lightbox--show')
-            }
-        }
-    })
-}
-
-if(baconPizzaIngredients) {
-    baconPizzaIngredients.addEventListener('click', (e) => {
-        if(e.target.classList.contains('lightbox')) {
-            baconPizzaIngredients.classList.remove('lightbox--show')
-        }
-    })
-}
-
-//Show kebab pizza ingredients
-if(infoPizza6) {
-    infoPizza6.addEventListener('click', (e) => {
-        if(e.target.dataset.name !== undefined) {
-            if(e.target.dataset.name === 'pizza') {
-                kebabPizzaIngredients.classList.add('lightbox--show')
-            }
-        }
-    })
-}
-
-if(kebabPizzaIngredients) {
-    kebabPizzaIngredients.addEventListener('click', (e) => {
-        if(e.target.classList.contains('lightbox')) {
-            kebabPizzaIngredients.classList.remove('lightbox--show')
-        }
-    })
-}
-
-//Show frankfurt pizza ingredients
-if(infoPizza7) {
-    infoPizza7.addEventListener('click', (e) => {
-        if(e.target.dataset.name !== undefined) {
-            if(e.target.dataset.name === 'pizza') {
-                frankfurtPizzaIngredients.classList.add('lightbox--show')
-            }
-        }
-    })
-}
-
-if(frankfurtPizzaIngredients) {
-    frankfurtPizzaIngredients.addEventListener('click', (e) => {
-        if(e.target.classList.contains('lightbox')) {
-            frankfurtPizzaIngredients.classList.remove('lightbox--show')
-        }
-    })
-}
-
-//Show four cheese pizza ingredients
-if(infoPizza8) {
-    infoPizza8.addEventListener('click', (e) => {
-        if(e.target.dataset.name !== undefined) {
-            if(e.target.dataset.name === 'pizza') {
-                fourCheesePizzaIngredients.classList.add('lightbox--show')
-            }
-        }
-    })
-}
-
-if(fourCheesePizzaIngredients) {
-    fourCheesePizzaIngredients.addEventListener('click', (e) => {
-        if(e.target.classList.contains('lightbox')) {
-            fourCheesePizzaIngredients.classList.remove('lightbox--show')
-        }
-    })
-}
-
-//Show chicken bacon pizza ingredients
-if(infoPizza9) {
-    infoPizza9.addEventListener('click', (e) => {
-        if(e.target.dataset.name !== undefined) {
-            if(e.target.dataset.name === 'pizza') {
-                baconChickenPizzaIngredients.classList.add('lightbox--show')
-            }
-        }
-    })
-}
-
-if(baconChickenPizzaIngredients) {
-    baconChickenPizzaIngredients.addEventListener('click', (e) => {
-        if(e.target.classList.contains('lightbox')) {
-            baconChickenPizzaIngredients.classList.remove('lightbox--show')
-        }
-    })
-}
-
-//Show mini pizza ingredients
-if(infoPizza10) {
-    infoPizza10.addEventListener('click', (e) => {
-        if(e.target.dataset.name !== undefined) {
-            if(e.target.dataset.name === 'pizza') {
-                miniPizzaIngredients.classList.add('lightbox--show')
-            }
-        }
-    })
-}
-
-if(miniPizzaIngredients) {
-    miniPizzaIngredients.addEventListener('click', (e) => {
-        if(e.target.classList.contains('lightbox')) {
-            miniPizzaIngredients.classList.remove('lightbox--show')
-        }
-    })
+// Hide pizza ingredients
+for(let lightbox of lightboxShow) {
+    switch (lightbox.id) {
+        case 'margarita-pizza-ingredients':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+        case 'campera-pizza-ingredients':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+        case 'mince-pizza-ingredients':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+        case 'crab-pizza-ingredients':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+        case 'bacon-pizza-ingredients':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+        case 'kebab-pizza-ingredients':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+        case 'frankfurt-pizza-ingredients':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+        case 'fourcheese-pizza-ingredients':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+        case 'baconchicken-pizza-ingredients':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+        case 'mini-pizza-ingredients':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+    }
 }

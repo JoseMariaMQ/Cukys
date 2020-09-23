@@ -1,109 +1,75 @@
-const infoPanini1 = document.getElementById('info-panini-0')
-const yorkPaniniIngredients = document.getElementById('york-panini-ingredients')
-
-const infoPanini2 = document.getElementById('info-panini-1')
-const hamPaniniIngredients = document.getElementById('ham-panini-ingredients')
-
-const infoPanini3 = document.getElementById('info-panini-2')
-const baconPaniniIngredients = document.getElementById('bacon-panini-ingredients')
-
-const infoPanini4 = document.getElementById('info-panini-3')
-const crabPaniniIngredients = document.getElementById('crab-panini-ingredients')
-
-const infoPanini5 = document.getElementById('info-panini-4')
-const bbqPaniniIngredients = document.getElementById('bbq-panini-ingredients')
-
-//Show york panini ingredients
-if(infoPanini1) {
-    infoPanini1.addEventListener('click', (e) => {
-        if(e.target.dataset.name !== undefined) {
-            if(e.target.dataset.name === 'panini') {
-                yorkPaniniIngredients.classList.add('lightbox--show')
+//Show panini ingredients
+for(let button of buttons) {
+    if(button.dataset.name !== undefined) {
+        if (button.dataset.name === 'panini') {
+            switch (button.id) {
+                case 'info-panini-0':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'york-panini-ingredients') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
+                case 'info-panini-1':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'ham-panini-ingredients') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
+                case 'info-panini-2':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'bacon-panini-ingredients') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
+                case 'info-panini-3':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'crab-panini-ingredients') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
+                case 'info-panini-4':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'bbq-panini-ingredients') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
             }
         }
-    })
+    }
 }
 
-if(yorkPaniniIngredients) {
-    yorkPaniniIngredients.addEventListener('click', (e) => {
-        if(e.target.classList.contains('lightbox')) {
-            yorkPaniniIngredients.classList.remove('lightbox--show')
-        }
-    })
-}
-
-//Show ham panini ingredients
-if(infoPanini2) {
-    infoPanini2.addEventListener('click', (e) => {
-        if(e.target.dataset.name !== undefined) {
-            if(e.target.dataset.name === 'panini') {
-                hamPaniniIngredients.classList.add('lightbox--show')
-            }
-        }
-    })
-}
-
-if(hamPaniniIngredients) {
-    hamPaniniIngredients.addEventListener('click', (e) => {
-        if(e.target.classList.contains('lightbox')) {
-            hamPaniniIngredients.classList.remove('lightbox--show')
-        }
-    })
-}
-
-//Show bacon panini ingredients
-if(infoPanini3) {
-    infoPanini3.addEventListener('click', (e) => {
-        if(e.target.dataset.name !== undefined) {
-            if(e.target.dataset.name === 'panini') {
-                baconPaniniIngredients.classList.add('lightbox--show')
-            }
-        }
-    })
-}
-
-if(baconPaniniIngredients) {
-    baconPaniniIngredients.addEventListener('click', (e) => {
-        if(e.target.classList.contains('lightbox')) {
-            baconPaniniIngredients.classList.remove('lightbox--show')
-        }
-    })
-}
-
-//Show crab panini ingredients
-if(infoPanini4) {
-    infoPanini4.addEventListener('click', (e) => {
-        if(e.target.dataset.name !== undefined) {
-            if(e.target.dataset.name === 'panini') {
-                crabPaniniIngredients.classList.add('lightbox--show')
-            }
-        }
-    })
-}
-
-if(crabPaniniIngredients) {
-    crabPaniniIngredients.addEventListener('click', (e) => {
-        if(e.target.classList.contains('lightbox')) {
-            crabPaniniIngredients.classList.remove('lightbox--show')
-        }
-    })
-}
-
-//Show bqq panini ingredients
-if(infoPanini5) {
-    infoPanini5.addEventListener('click', (e) => {
-        if(e.target.dataset.name !== undefined) {
-            if(e.target.dataset.name === 'panini') {
-                bbqPaniniIngredients.classList.add('lightbox--show')
-            }
-        }
-    })
-}
-
-if(bbqPaniniIngredients) {
-    bbqPaniniIngredients.addEventListener('click', (e) => {
-        if(e.target.classList.contains('lightbox')) {
-            bbqPaniniIngredients.classList.remove('lightbox--show')
-        }
-    })
+// Hide panini ingredients
+for(let lightbox of lightboxShow) {
+    switch (lightbox.id) {
+        case 'york-panini-ingredients':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+        case 'ham-panini-ingredients':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+        case 'bacon-panini-ingredients':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+        case 'crab-panini-ingredients':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+        case 'bbq-panini-ingredients':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+    }
 }

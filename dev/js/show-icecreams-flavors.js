@@ -1,21 +1,27 @@
-const infoIceCream1 = document.getElementById('info-icecream')
-const iceCreamFlavors = document.getElementById('ice-cream-flavors')
-
 //Show ice cream flavors
-if(infoIceCream1) {
-    infoIceCream1.addEventListener('click', (e) => {
-        if(e.target.dataset.name !== undefined) {
-            if(e.target.dataset.name === 'flavor') {
-                iceCreamFlavors.classList.add('lightbox--show')
+for(let button of buttons) {
+    if(button.dataset.name !== undefined) {
+        if (button.dataset.name === 'flavor') {
+            switch (button.id) {
+                case 'info-icecream':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'ice-cream-flavors') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
             }
         }
-    })
+    }
 }
 
-if(iceCreamFlavors) {
-    iceCreamFlavors.addEventListener('click', (e) => {
-        if(e.target.classList.contains('lightbox')) {
-            iceCreamFlavors.classList.remove('lightbox--show')
-        }
-    })
+// Hide ice cream flavors
+for(let lightbox of lightboxShow) {
+    switch (lightbox.id) {
+        case 'ice-cream-flavors':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+    }
 }

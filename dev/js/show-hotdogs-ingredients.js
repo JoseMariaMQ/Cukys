@@ -1,21 +1,27 @@
-const infoHotDog1 = document.getElementById('info-hotdog-0')
-const hotDogIngredients = document.getElementById('hot-dog-ingredients')
-
-//Show hot dog ingredients
-if(infoHotDog1) {
-    infoHotDog1.addEventListener('click', (e) => {
-        if(e.target.dataset.name !== undefined) {
-            if(e.target.dataset.name === 'hotdog') {
-                hotDogIngredients.classList.add('lightbox--show')
+//Show hotdog ingredients
+for(let button of buttons) {
+    if(button.dataset.name !== undefined) {
+        if (button.dataset.name === 'hotdog') {
+            switch (button.id) {
+                case 'info-hotdog-0':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'hot-dog-ingredients') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
             }
         }
-    })
+    }
 }
 
-if(hotDogIngredients) {
-    hotDogIngredients.addEventListener('click', (e) => {
-        if(e.target.classList.contains('lightbox')) {
-            hotDogIngredients.classList.remove('lightbox--show')
-        }
-    })
+// Hide hotdog ingredients
+for(let lightbox of lightboxShow) {
+    switch (lightbox.id) {
+        case 'hot-dog-ingredients':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+    }
 }
