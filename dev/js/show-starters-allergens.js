@@ -59,6 +59,34 @@ for(let button of buttons) {
                         }
                     })
                     break
+                case 'info-starter-8':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'flamenquins-starter-allergens') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
+                case 'info-starter-9':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'popcornchicken-starter-allergens') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
+                case 'info-starter-10':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'chickenstrips-starter-allergens') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
+                case 'info-starter-11':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'prawnsinbatter-starter-allergens') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
             }
         }
     }
@@ -103,6 +131,26 @@ for(let lightbox of lightboxShow) {
             })
             break
         case 'chickendelicacies-starter-allergens':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+        case 'flamenquins-starter-allergens':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+        case 'popcornchicken-starter-allergens':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+        case 'chickenstrips-starter-allergens':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+        case 'prawnsinbatter-starter-allergens':
             lightbox.addEventListener('click', () => {
                 lightbox.classList.remove('lightbox--show')
             })

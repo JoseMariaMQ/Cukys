@@ -37,60 +37,67 @@ for(let button of buttons) {
                 case 'info-baguette-4':
                     button.addEventListener('click', () => {
                         for(let lightbox of lightboxShow) {
-                            if(lightbox.id === 'bacon-baguette-ingredients') lightbox.classList.add('lightbox--show')
+                            if(lightbox.id === 'breadedchicken-baguette-ingredients') lightbox.classList.add('lightbox--show')
                         }
                     })
                     break
                 case 'info-baguette-5':
                     button.addEventListener('click', () => {
                         for(let lightbox of lightboxShow) {
-                            if(lightbox.id === 'tortilla-baguette-ingredients') lightbox.classList.add('lightbox--show')
+                            if(lightbox.id === 'bacon-baguette-ingredients') lightbox.classList.add('lightbox--show')
                         }
                     })
                     break
                 case 'info-baguette-6':
                     button.addEventListener('click', () => {
                         for(let lightbox of lightboxShow) {
-                            if(lightbox.id === 'hamtortilla-baguette-ingredients') lightbox.classList.add('lightbox--show')
+                            if(lightbox.id === 'tortilla-baguette-ingredients') lightbox.classList.add('lightbox--show')
                         }
                     })
                     break
                 case 'info-baguette-7':
                     button.addEventListener('click', () => {
                         for(let lightbox of lightboxShow) {
-                            if(lightbox.id === 'maigrette-baguette-ingredients') lightbox.classList.add('lightbox--show')
+                            if(lightbox.id === 'hamtortilla-baguette-ingredients') lightbox.classList.add('lightbox--show')
                         }
                     })
                     break
                 case 'info-baguette-8':
                     button.addEventListener('click', () => {
                         for(let lightbox of lightboxShow) {
-                            if(lightbox.id === 'loin-baguette-ingredients') lightbox.classList.add('lightbox--show')
+                            if(lightbox.id === 'maigrette-baguette-ingredients') lightbox.classList.add('lightbox--show')
                         }
                     })
                     break
                 case 'info-baguette-9':
                     button.addEventListener('click', () => {
                         for(let lightbox of lightboxShow) {
-                            if(lightbox.id === 'freshloin-baguette-ingredients') lightbox.classList.add('lightbox--show')
+                            if(lightbox.id === 'loin-baguette-ingredients') lightbox.classList.add('lightbox--show')
                         }
                     })
                     break
                 case 'info-baguette-10':
                     button.addEventListener('click', () => {
                         for(let lightbox of lightboxShow) {
-                            if(lightbox.id === 'squid-baguette-ingredients') lightbox.classList.add('lightbox--show')
+                            if(lightbox.id === 'freshloin-baguette-ingredients') lightbox.classList.add('lightbox--show')
                         }
                     })
                     break
                 case 'info-baguette-11':
                     button.addEventListener('click', () => {
                         for(let lightbox of lightboxShow) {
-                            if(lightbox.id === 'sausages-baguette-ingredients') lightbox.classList.add('lightbox--show')
+                            if(lightbox.id === 'squid-baguette-ingredients') lightbox.classList.add('lightbox--show')
                         }
                     })
                     break
                 case 'info-baguette-12':
+                    button.addEventListener('click', () => {
+                        for(let lightbox of lightboxShow) {
+                            if(lightbox.id === 'sausages-baguette-ingredients') lightbox.classList.add('lightbox--show')
+                        }
+                    })
+                    break
+                case 'info-baguette-13':
                     button.addEventListener('click', () => {
                         for(let lightbox of lightboxShow) {
                             if(lightbox.id === 'special-baguette-ingredients') lightbox.classList.add('lightbox--show')
@@ -121,6 +128,11 @@ for(let lightbox of lightboxShow) {
             })
             break
         case 'chicken-baguette-ingredients':
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('lightbox--show')
+            })
+            break
+        case 'breadedchicken-baguette-ingredients':
             lightbox.addEventListener('click', () => {
                 lightbox.classList.remove('lightbox--show')
             })

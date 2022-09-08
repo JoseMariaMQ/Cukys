@@ -1,7 +1,10 @@
 {
-  "name": "ux-project",
+  "name": "cukys",
   "version": "1.0.0",
-  "description": "portfolio photography",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "description": "cukys",
   "main": "app.js",
   "keywords": [],
   "author": "",
