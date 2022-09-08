@@ -158,7 +158,7 @@ body { display: grid; grid-template-columns: 1fr; grid-template-rows: 150px 1fr 
 
 .products__items ol .item1 { font-size: .9rem; margin-left: .5rem; }
 
-.products__items ol .item2 { background-color: var(--primary-color); color: var(--text-color); padding: .23rem .4rem; border: none; border-radius: 15px; font-size: .6rem; box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.5); float: right; width: 118px; }
+.products__items ol .item2 { background-color: var(--primary-color); color: var(--text-color); padding: .23rem .4rem; border: none; border-radius: 15px; font-size: .55rem; box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.5); float: right; width: 116px; }
 
 .products__items ol .item2 i { margin-left: .3rem; }
 
