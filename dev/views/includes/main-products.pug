@@ -5,7 +5,7 @@
         each starter in starters
             li
                 span.item1= starter
-                button.item2(type="button" id="info-starter-" + starters.indexOf(starter) data-name="starter") HAZLO MENÚ / +INFO
+                button.item2(type="button" id="info-starter-" + starters.indexOf(starter) data-name="starter")= starter!=='gambas rebozadas'?'HAZLO MENÚ / +INFO':'+INFO'
                     i.fas.fa-hand-pointer
                 span.item3= priceStarters[starters.indexOf(starter)]
     .products__image

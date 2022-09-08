@@ -41,46 +41,39 @@ for(let button of buttons) {
                 case 'info-starter-5':
                     button.addEventListener('click', () => {
                         for(let lightbox of lightboxShow) {
-                            if(lightbox.id === 'fingers-starter-allergens') lightbox.classList.add('lightbox--show')
+                            if(lightbox.id === 'torpedo-starter-allergens') lightbox.classList.add('lightbox--show')
                         }
                     })
                     break
                 case 'info-starter-6':
                     button.addEventListener('click', () => {
                         for(let lightbox of lightboxShow) {
-                            if(lightbox.id === 'torpedo-starter-allergens') lightbox.classList.add('lightbox--show')
+                            if(lightbox.id === 'chickendelicacies-starter-allergens') lightbox.classList.add('lightbox--show')
                         }
                     })
                     break
                 case 'info-starter-7':
                     button.addEventListener('click', () => {
                         for(let lightbox of lightboxShow) {
-                            if(lightbox.id === 'chickendelicacies-starter-allergens') lightbox.classList.add('lightbox--show')
+                            if(lightbox.id === 'flamenquins-starter-allergens') lightbox.classList.add('lightbox--show')
                         }
                     })
                     break
                 case 'info-starter-8':
                     button.addEventListener('click', () => {
                         for(let lightbox of lightboxShow) {
-                            if(lightbox.id === 'flamenquins-starter-allergens') lightbox.classList.add('lightbox--show')
+                            if(lightbox.id === 'popcornchicken-starter-allergens') lightbox.classList.add('lightbox--show')
                         }
                     })
                     break
                 case 'info-starter-9':
                     button.addEventListener('click', () => {
                         for(let lightbox of lightboxShow) {
-                            if(lightbox.id === 'popcornchicken-starter-allergens') lightbox.classList.add('lightbox--show')
-                        }
-                    })
-                    break
-                case 'info-starter-10':
-                    button.addEventListener('click', () => {
-                        for(let lightbox of lightboxShow) {
                             if(lightbox.id === 'chickenstrips-starter-allergens') lightbox.classList.add('lightbox--show')
                         }
                     })
                     break
-                case 'info-starter-11':
+                case 'info-starter-10':
                     button.addEventListener('click', () => {
                         for(let lightbox of lightboxShow) {
                             if(lightbox.id === 'prawnsinbatter-starter-allergens') lightbox.classList.add('lightbox--show')
@@ -116,11 +109,6 @@ for(let lightbox of lightboxShow) {
             })
             break
         case 'twister-starter-allergens':
-            lightbox.addEventListener('click', () => {
-                lightbox.classList.remove('lightbox--show')
-            })
-            break
-        case 'fingers-starter-allergens':
             lightbox.addEventListener('click', () => {
                 lightbox.classList.remove('lightbox--show')
             })
